@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X-Tech</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .message-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        width: 100%;
+        padding: 20px;
+      }
+
+      /* Message box styling */
+      .message-box {
+        position: relative;
+        max-width: 1000px;
+        width: 100%;
+        background-color: #f0f4ff;
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 1rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Mini triangle aligned to the right */
+      .message-box::after {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        right: 20px; /* Align the triangle to the right side */
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 15px solid #f0f4ff;
+      }
+
+      /* Author's name */
+      .author-name {
+        margin-top: 10px;
+        font-size: 0.9rem;
+        color: #555;
+        text-align: right; /* Align text to the right edge of the container */
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <!-- Nav -->
+    <nav class="p-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="./img/logo.png" alt="Logo" class="h-8 w-8 mr-2" />
+        <span class="text-lg font-bold">X-Tech</span>
+      </div>
+      <div class="">
+        <span class="mr-2">Call Now!</span>
+        <span class="text-gray-500">1-800-123-4567</span>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="flex flex-col items-center justify-center">
+      <h1 class="text-4xl font-bold">
+        The perfect way to convert your traffic into sales
+      </h1>
+    </header>
+
+    <!-- Main Image -->
+    <div class="flex flex-col items-center mt-4">
+      <img src="./img/main-img.png" alt="Main Image" class="h-64 w-auto" />
+    </div>
+
+    <!-- Button and Text -->
+    <div class="flex flex-col items-center mt-8">
+      <button class="bg-blue-400 text-white font-bold py-2 px-4 rounded">
+        <p><b>GIVE IT A TRY!</b></p>
+        <span>Get 30 days access to fully operational product</span>
+      </button>
+      <div class="flex items-center mt-4">
+        <span class="text-lg text-blue-400 mr-2"
+          >Or check out the below features</span
+        >
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div class="product-container grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
+      <div class="product-item flex items-center p-4 border rounded">
+        <img src="./img/item-1.png" alt="Item 1" class="h-16 w-16 mr-4" />
+        <div class="product-info">
+          <h2 class="text-xl font-bold">Quick and easy</h2>
+          <p class="text-gray-600">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
+            fugit eveniet illo possimus, porro quibusdam! Obcaecati doloribus
+            nam rem repudiandae.
+          </p>
+        </div>
+      </div>
+
+      <div class="product-item flex items-center p-4 border rounded">
+        <img src="./img/item-2.png" alt="Item 2" class="h-16 w-16 mr-4" />
+        <div class="product-info">
+          <h2 class="text-xl font-bold">Less risky</h2>
+          <p class="text-gray-600">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+            officiis id nesciunt ipsum. Reiciendis, modi! Unde at eligendi eos
+            delectus.
+          </p>
+        </div>
+      </div>
+
+      <div class="product-item flex items-center p-4 border rounded">
+        <img src="./img/item-3.png" alt="Item 3" class="h-16 w-16 mr-4" />
+        <div class="product-info">
+          <h2 class="text-xl font-bold">Support - 24h</h2>
+          <p class="text-gray-600">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+            voluptas veniam sequi eaque asperiores facilis eveniet doloremque,
+            enim totam saepe?
+          </p>
+        </div>
+      </div>
+
+      <div class="product-item flex items-center p-4 border rounded">
+        <img src="./img/item-4.png" alt="Item 4" class="h-16 w-16 mr-4" />
+        <div class="product-info">
+          <h2 class="text-xl font-bold">Well written help file</h2>
+          <p class="text-gray-600">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+            excepturi doloremque debitis repellendus dignissimos hic voluptatem
+            iste aspernatur reiciendis placeat!
+          </p>
+        </div>
+      </div>
+
+      <div class="product-item flex items-center p-4 border rounded">
+        <img src="./img/item-5.png" alt="Item 5" class="h-16 w-16 mr-4" />
+        <div class="product-info">
+          <h2 class="text-xl font-bold">Import your own photos</h2>
+          <p class="text-gray-600">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+            aspernatur dolorem reiciendis laudantium rem eveniet omnis. Ratione
+            id voluptatibus facilis!
+          </p>
+        </div>
+      </div>
+
+      <div class="product-item flex items-center p-4 border rounded">
+        <img src="./img/item-6.png" alt="Item 6" class="h-16 w-16 mr-4" />
+        <div class="product-info">
+          <h2 class="text-xl font-bold">User friendly design</h2>
+          <p class="text-gray-600">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ipsa
+            consectetur eaque alias fugit, id adipisci excepturi recusandae a
+            cumque?
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Review -->
+    <div class="review p-4">
+      <p class="text-blue-400 text-xl">See what our customers are saying...</p>
+      <div class="message-container flex justify-center">
+        <div class="message-box">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Accusantium, sint eos ducimus nesciunt aut mollitia ab cum molestiae
+            natus dicta, neque saepe sed? Sequi pariatur provident autem sit
+            adipisci. Officiis, veniam. In tenetur ullam facere perferendis
+            magni magnam, provident molestias ratione? Illo sunt numquam quaerat
+            quidem debitis quos quasi? In.
+          </p>
+        </div>
+        <div class="author-name text-center mt-2">Steve Job, Apple</div>
+      </div>
+    </div>
+
+    <div class="flex justify-center mt-8 mb-8">
+      <button class="bg-blue-400 text-white font-bold py-2 px-4 rounded">
+        <p><b>GIVE IT A TRY!</b></p>
+        <span>Get 30 days access to fully operational product</span>
+      </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-400 text-white p-8">
+      <div class="flex flex-wrap justify-between">
+        <div class="w-full md:w-1/4 mb-4 md:mb-0 p-4">
+          <h3 class="text-lg font-bold mb-2">Contact</h3>
+          <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed illum
+            magnam perspiciatis, iusto eos quae velit voluptas consectetur amet.
+            Officiis corrupti incidunt optio commodi nesciunt excepturi quas
+            quasi neque aliquid.
+          </span>
+        </div>
+
+        <div class="w-full md:w-1/4 mb-4 md:mb-0 mt-10 p-4">
+          <img src="./img/map.png" alt="map" />
+        </div>
+
+        <div class="w-full md:w-1/4 mb-4 md:mb-0 p-4">
+          <h3 class="text-lg font-bold mb-2">Design details</h3>
+          <span
+            >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
+            reprehenderit officia iste necessitatibus, quos eveniet culpa
+            corrupti sunt eligendi repellat.</span
+          >
+        </div>
+
+        <div class="w-full md:w-1/4 mb-4 md:mb-0 p-4">
+          <h3 class="text-lg font-bold mb-2">Stay connected</h3>
+          <div class="flex space-x-2">
+            <a href="#"
+              ><img
+                src="./img/skype-brands-solid.svg"
+                alt="skype"
+                class="h-4 w-4"
+            /></a>
+            <a href="#"
+              ><img
+                src="./img/linkedin-brands-solid.svg"
+                alt="linkedin"
+                class="h-4 w-4"
+            /></a>
+            <img src="./img/digg-brands-solid.svg" alt="digg" class="h-4 w-4" />
+            <a href="#"
+              ><img
+                src="./img/instagram-brands-solid.svg"
+                alt="instagram"
+                class="h-4 w-4"
+            /></a>
+            <a href="#"
+              ><img
+                src="./img/facebook-brands-solid.svg"
+                alt="facebook"
+                class="h-4 w-4"
+            /></a>
+            <a href="#"
+              ><img
+                src="./img/twitter-brands-solid.svg"
+                alt="twitter"
+                class="h-4 w-4"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Copy right -->
+    <div class="bg-gray-800 text-white p-4 flex justify-between">
+      <span>Copyright &copy; 2011 - Shegy - All rights reserved.</span>
+      <span>Privacy policy | Regulations</span>
+    </div>
+  </body>
+</html>
